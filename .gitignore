@@ -1,1 +1,3 @@
 NBA_JSON_ORDERED.json
+./__pycache__
+*.pyc

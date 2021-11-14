@@ -33,9 +33,6 @@ def run_nba_app():
 
     response = requests.get(NBA_URL)
 
-    # print(response)
-    # print(type(response))
-
     if response.status_code == 200:
 
         print("Data fetched succesfully!")
@@ -58,11 +55,8 @@ def run_nba_app():
                     standby()
                     clear_screen()
             valid_number = validate_user_input(input_number,int(nba_players_array[0]["h_in"])*2,int(nba_players_array[-1]["h_in"])*2)
-            print("ENtro 1")
             if (valid_number == "Valid"):
-                print("ENtro 2")
                 array_of_correct_pairs = find_nba_pairs(input_number, nba_players_array)
-                print("ENtro 3")
                 clear_screen()
                 
                 l(1)
@@ -72,9 +66,13 @@ def run_nba_app():
                 result_number = 1
                 print("RESULTS:")
                 l(1)
-                for result in array_of_correct_pairs:
-                    print("Pair {}: {} {} ({} inches) | {} {} ({} inches)".format(result_number, nba_players_array[result[0]]["first_name"], nba_players_array[result[0]]["last_name"], nba_players_array[result[0]]["h_in"], nba_players_array[result[1]]["first_name"], nba_players_array[result[1]]["last_name"], nba_players_array[result[1]]["h_in"]))
-                    result_number += 1
+                
+                if len(array_of_correct_pairs) > 0:
+                    for result in array_of_correct_pairs:
+                        print("Pair {}: {} {} ({} inches) | {} {} ({} inches)".format(result_number, nba_players_array[result[0]]["first_name"], nba_players_array[result[0]]["last_name"], nba_players_array[result[0]]["h_in"], nba_players_array[result[1]]["first_name"], nba_players_array[result[1]]["last_name"], nba_players_array[result[1]]["h_in"]))
+                        result_number += 1
+                else:
+                    print("No matches found")
 
                 l(1)
                 print("The pairing is done! Thank you for using the NBA App")
