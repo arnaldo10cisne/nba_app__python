@@ -107,6 +107,9 @@ def about():
     Linekdin:         https://www.linkedin.com/in/arnaldo10cisne/
     Github:           https://github.com/arnaldo10cisne
     Personal website: https://www.arnaldocisneros.com/
+
+    By the way, before you go, don't forget to check the WEB EDITION of this same app!
+    Link: https://arnaldo10cisne.github.io/nba_app__javascript/
     
     """)
     standby()
