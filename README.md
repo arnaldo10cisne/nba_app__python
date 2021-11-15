@@ -16,6 +16,7 @@ This repository contains the following ".py" files. You'll need all three of the
 - **main**:  This is the file where you'll find the rendering of the main menu, and each of the options it contains. It will also do the calls to all the functions that will make this program work.
 - **nba_module**: Here, you’ll find the most important functions that will help sort the array of players and search for all the matches.
 - **support_module**: This module includes all the imports that the program needs to work, and some auxiliary functions to help with aesthetics.
+- **unittest_module**: This module contains some tests applied to the functions in "nba_module", to ensure that they work in multiple scenarios.
 
 ### Running the code:
 
@@ -26,6 +27,7 @@ You can run this application following the next steps:
 	 - ![enter image description here](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636934741/nba_app_python/instructions1_kg8aqj.png)
  3. Once you have all files, locate them on a single directory, and make sure to run the file **"main .py"**. If you have all files in the same directory, the app should run without any issues.
  4. If the program doesn't start, however, make sure you have the "request" module installed. This module is required for python to fetch the data from the URL. To install this module, inside the command line execute the following command: `pip install requests`
+ 5. There is also the "unittest_module" that contains some unit tests for the functions in "nba_module". To run this test, you must the command `python3 unittesting_module.py` in the command line, making sure first that the working directory is the same as the one where the files are located.
 
 ## Inner workings:
 The way this program works can be summarized in the following steps:
