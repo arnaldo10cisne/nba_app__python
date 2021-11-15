@@ -4,6 +4,7 @@ import os
 
 
 def clear_screen():
+        """Function created to clean the console, to provide a better experience. It needs to evaluate the OS first."""
         if os.name=="nt":
                 os.system("cls")
         else:
@@ -11,17 +12,10 @@ def clear_screen():
 
 
 def l(n):
+        """Function created to create a new empty line, to provide a better experience"""
         for i in range(n): print("")
 
 
 def standby(): 
-    a=input()
-
-
-def esp(n):
-        if n <= 0:
-                n = 0
-        if type(n) == float:
-                n = round(n)
-        for i in range(n):
-                print(" ", end="")
+        """Function created to pause the program until the user presses ENTER, to provide a better experience"""
+        a=input()
