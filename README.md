@@ -8,12 +8,22 @@ This program was intended as the resolution of a technical test provided by Mach
 ![App capture 2](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636860526/nba_app_python/nba_python3_-_copia_r13anf.png)
 ![App capture 3](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636860526/nba_app_python/nba_python4_txpa5g.png)
 
-## Files:
-This repository contains the following files:
+## How to use:
+This repository contains the following ".py" files. You'll need all three of them to run this program:
 
 - **main**:  This is the file where you'll find the rendering of the main menu, and each of the options it contains. It will also do the calls to all the functions that will make this program work.
 - **nba_module**: Here, you’ll find the most important functions that will help sort the array of players and search for all the matches.
 - **support_module**: This module includes all the imports that the program needs to work, and some auxiliary functions to help with aesthetics.
+
+### Running the code:
+
+You can run this application following the next steps:
+
+1.  First, you have to make sure that you have Python installed on your computer. If you are not quite sure if Python is installed on your computer, please go to the command line and type `python3 --version` if you are on Linux or Mac, or `python --version` if you are on Windows. You should be given the current version of Python installed on your computer. If an error message pops up saying that the command was not recognized, most likely you need to install Python. To do so, please follow [this](www.m.com) tutorial.
+ 2. After Python has been successfully installed, the next step is very simple. You need to download this repository in a ZIP file
+	 - ![enter image description here](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636934741/nba_app_python/instructions1_kg8aqj.png)
+ 3. Once you have all files, locate them on a single directory, and make sure to run the file **"main .py"**. If you have all files in the same directory, the app should run without any issues.
+ 4. If the program doesn't start, however, make sure you have the "request" module installed. This module is required for python to fetch the data from the URL. To install this module, inside the command line execute the following command: `pip install requests`
 
 ## Inner workings:
 The way this program works can be summarized in the following steps:
