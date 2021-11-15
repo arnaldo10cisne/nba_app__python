@@ -2,6 +2,8 @@
 
 # NBA App - Python edition
 
+Before continuing, don't forget to check the [WEB EDITION](https://github.com/arnaldo10cisne/nba_app__javascript) of this project too!
+
 This program was intended as the resolution of a technical test provided by Macheight. The program extracts general information about several NBA players from an URL and is capable of creating pairs of players whose heights add up to a number previously given by the user.
 
 ![App capture 1](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636860526/nba_app_python/nba_python2_nxrg37.png)
