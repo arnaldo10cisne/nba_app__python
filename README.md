@@ -24,10 +24,12 @@ You can run this application following the next steps:
 
 1.  First, you have to make sure that you have Python installed on your computer. If you are not quite sure if Python is installed on your computer, please go to the command line and type `python3 --version` if you are on Linux or Mac, or `python --version` if you are on Windows. You should be given the current version of Python installed on your computer. If an error message pops up saying that the command was not recognized, most likely you need to install Python. To do so, please follow [this](www.m.com) tutorial.
  2. After Python has been successfully installed, the next step is very simple. You need to download this repository in a ZIP file
-	 - ![enter image description here](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636934741/nba_app_python/instructions1_kg8aqj.png)
+	 - ![Download link](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636934741/nba_app_python/instructions1_kg8aqj.png)
  3. Once you have all files, locate them on a single directory, and make sure to run the file **"main .py"**. If you have all files in the same directory, the app should run without any issues.
  4. If the program doesn't start, however, make sure you have the "request" module installed. This module is required for python to fetch the data from the URL. To install this module, inside the command line execute the following command: `pip install requests`
- 5. There is also the "unittest_module" that contains some unit tests for the functions in "nba_module". To run this test, you must the command `python3 unittesting_module.py` in the command line, making sure first that the working directory is the same as the one where the files are located.
+ 5. There is also the "unittest_module" that contains some unit tests for the functions in "nba_module". To run these tests, you must enter the command `python3 unittesting_module.py` in the command line, making sure first that the working directory is the same as the one where the files are located.
+ 	 - ![unit tests](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636946415/nba_app_python/nba_test_a9bvbk.png)
+
 
 ## Inner workings:
 The way this program works can be summarized in the following steps:
@@ -40,22 +42,22 @@ The way this program works can be summarized in the following steps:
 	 - ![Spread algorithm](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636863263/nba_app_python/nba_graphic1_sr9yh2.png)
  7.  After the "spread" algorithm has collected the indexes of all the players that match, the program evaluates the next player in the array and does the same process.
  8. To avoid repeated matches, the program has the condition that, in a pair, the first player has to have a lower or equal height to the second player.
-	   - ![enter image description here](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636863762/nba_app_python/nba_graphic2_t2ohhi.png)
+	   - ![Height validation](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636863762/nba_app_python/nba_graphic2_t2ohhi.png)
  9. Finally, when all the pairs have been saved in an array, the program uses that information to show all those pairs with the first name, last name, and height to the user.
 
 ## Algorithmic complexity:
 One of the requirements of this project was implementing algorithms that had better performance than *O(N^2)*. 
 
-![enter image description here](https://3.bp.blogspot.com/-Frcylha7Spw/XA51cet8wkI/AAAAAAAACpg/RKrCC5gDtOofmPfCrFNM_UF83BY9AlI3QCLcBGAs/s1600/big-o-complexity-chart.png)
+![Algorithmic complexity](https://3.bp.blogspot.com/-Frcylha7Spw/XA51cet8wkI/AAAAAAAACpg/RKrCC5gDtOofmPfCrFNM_UF83BY9AlI3QCLcBGAs/s1600/big-o-complexity-chart.png)
 
 This program has two parts where the Algorithmic complexity is worth considering:
 
  - **Sorting the array**: The algorithm used to sort the array was *The Merge sort*. Created by John von Neumann in 1945, this is one of the most efficient sorting algorithms to date. Worst case scenario, this algorithm has a performance of *O(N x log N)*. 1.  It works by dividing the array more and more until we have arrays of just one element. Then, through a series of comparisons, combine said unit arrays in such a way that they are in the desired order. 
-	 - ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif)
+	 - ![The Merge sort](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif)
  - **Searching inside the array**: 1.  The algorithm used to search for an element in the array was _The Binary search_. It takes the principle of “Divide and conquer”. Worst case scenario, this algorithm has a performance of _O(log N)_, making it one of the most efficient algorithms to date. It works by dividing the array in half again and again until it finds the desired element. The only downside would be the fact that this algorithm requires the list to be ordered. Hence, it the importance of sorting the list before working on it.
-	 - ![enter image description here](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
+	 - ![The Binary search](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
 
-The most complex algorithm used in this case was the mixing algorithm, used in the sorting section. Then, a function was used where binary searches were performed iteratively, causing an algorithmic complexity of *O(N x log N)*. ![enter image description here](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636866062/nba_app_python/nba_graphic3_fu9b0w.png)
+The most complex algorithm used in this case was the mixing algorithm, used in the sorting section. Then, a function was used where binary searches were performed iteratively, causing an algorithmic complexity of *O(N x log N)*. ![O(N x log N)](https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636866062/nba_app_python/nba_graphic3_fu9b0w.png)
 
 ### Finally
 
