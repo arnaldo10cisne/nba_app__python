@@ -5,8 +5,8 @@ def validate_user_input(input_number,minimum,maximum):
     """Validates the user input, to make sure it is a positive integer in the range between MINIMUM and MAXIMUM
     
     OUTPUT: str"""
-    if input_number < 0:
-        return "Please enter a positive integer"
+    if input_number <= 0:
+        return "Please enter a positive integer bigger than zero"
     if input_number < minimum or input_number > maximum:
         return """\nNo matches found\n\nTIP: Enter a number between {} and {} to find possible results""".format(minimum,maximum)
     return "Valid"
@@ -48,6 +48,7 @@ def order_array(array_to_order):
             k += 1
 
         return array_to_order
+    return array_to_order
 
 
 def search_first_result(list, start, end, objective):
